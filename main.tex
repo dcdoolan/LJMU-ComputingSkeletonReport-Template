@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,float,booktabs,rotating,graphicx,csquotes}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[onehalfspacing]{setspace} % Sets line spacing to 1.5
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[ruled] {algorithm2e}
+\usepackage[backend=biber,style=ieee,]{biblatex}
+  \addbibresource{references.bib}
+\graphicspath{ {./images/} }  % Look within the "images" folder for Images. 
+
+\newcommand{\latex}{\LaTeX\ }
+\renewcommand*{\bibfont}{\footnotesize}
+\renewcommand*\familydefault{\sfdefault}
+
+\begin{document}
+\input{titlepage} % Edit the file titlepage.tex to update the Title Page
+\clearpage
+\singlespacing
+\tableofcontents  % Display Table of Contents
+\listoffigures    % Display List of Figures
+\listoftables     % Display List of Tables
+\listofalgorithms % Display List of Algorithms NOTE: may need comment out this line if No Algorithms exist
+\clearpage
+\onehalfspacing
+% The main body / content of the report begins here.
+
+\section{Introduction}
+Text text text 
+
+\section{Background Research \& Literature Review}
+Text text text
+
+\section{Design}
+Text text text
+
+\section{Implementation}
+Text text text
+
+\section{Testing and Evaluation}
+Text text text
+
+\section{Conclusion}
+Text text text
+
+\include{howToGuide} % Add a Percentage Symbol at the start of this line to remove the "How To Guide" from out Compiled pdf
+
+\clearpage
+\addcontentsline{toc}{section}{References}
+\singlespacing % Reduce the line spacing for the bibliography to save of vertical space usage
+\printbibliography
+\end{document}
